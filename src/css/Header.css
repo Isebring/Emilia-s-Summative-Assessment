@@ -1,0 +1,142 @@
+header {
+  transition: transform 0.3s ease-in-out;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 85px;
+  width: 100%;
+  z-index: 10;
+  background: url("/src/assets/imgs/white-gradient.jpg") no-repeat center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  border-bottom: 0.4rem solid #e6be8a;
+}
+
+.logo {
+  width: 70px;
+  transition: all 0.5s ease-in-out;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2px rgba(242, 195, 65, 0.8));
+}
+
+.button-color {
+  color: var(--nav-text-color);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.button-color:hover {
+  background-color: var(--button-primary-background-color);
+  color: var(--heading-color);
+}
+
+.button-color.active {
+  background-color: var(--button-primary-background-color);
+  color: var(--heading-color);
+}
+
+.header-inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.link {
+  line-height: 1;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--mantine-radius-sm);
+  text-decoration: none;
+  color: #2b2a2a;
+  font-weight: 500;
+}
+
+.link.active,
+.link:hover {
+  background-color: rgb(53, 53, 53);
+  color: rgb(255, 255, 255);
+}
+
+.link-content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.header-links {
+  color: var(--nav-text-color);
+}
+
+.header-links.opened {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: url("/src/assets/imgs/white-gradient.jpg") no-repeat center fixed;
+  background-size: cover;
+  width: 100%;
+  z-index: 5;
+  height: auto;
+}
+
+.header-links.opened .link {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 1rem;
+  border-top: 1px solid #e6be8a;
+}
+
+.dropdown {
+  display: none;
+}
+
+/* .dropdown.opened {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--tertiary-background-color);
+    border-radius: var(--mantine-radius-sm);
+    z-index: 20;
+  } */
+
+.burger {
+  display: none;
+}
+
+@media (max-width: 972px) {
+  .burger {
+    display: block;
+  }
+
+  .header-links {
+    display: none;
+  }
+
+  .header-links.opened {
+    display: block;
+  }
+  .header-inner {
+    display: flex;
+  }
+}
+
+@media (max-width: 360px) {
+  .button-color {
+    font-size: 0.8rem;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .logo {
+    width: 60px;
+  }
+}
