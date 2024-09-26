@@ -13,6 +13,11 @@ export const HeroVideo: React.FC = () => {
     }
   };
 
+  const videoSrc =
+    window.innerWidth < 600
+      ? "https://www.youtube.com/embed/n5uwPja0V2U?autoplay=1&mute=1&controls=0&loop=1&playlist=n5uwPja0V2U&vq=small"
+      : "https://www.youtube.com/embed/n5uwPja0V2U?autoplay=1&mute=1&controls=0&loop=1&playlist=n5uwPja0V2U";
+
   return (
     <>
       <div className={`hero-section ${isScrolled ? "hidden" : ""}`}>
@@ -20,7 +25,7 @@ export const HeroVideo: React.FC = () => {
           <iframe
             width="100%"
             height="100%"
-            src="https://www.youtube.com/embed/n5uwPja0V2U?autoplay=1&mute=1&controls=0&loop=1&playlist=n5uwPja0V2U"
+            src={videoSrc}
             title="History Video"
             frameBorder="0"
             allow="autoplay; fullscreen"

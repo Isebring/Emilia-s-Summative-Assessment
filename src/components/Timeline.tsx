@@ -21,12 +21,12 @@ const HistoricalTimeline: React.FC = () => {
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    canvas.width = window.innerWidth * (window.innerWidth < 768 ? 0.8 : 1);
+    canvas.height = window.innerHeight * (window.innerWidth < 768 ? 0.8 : 1);
 
     let scrollPosition = 0;
     const speed = 1;
-    const particleCount = 100;
+    const particleCount = window.innerWidth < 768 ? 50 : 100;
     const particles: Particle[] = [];
 
     const historicalEvents = [
