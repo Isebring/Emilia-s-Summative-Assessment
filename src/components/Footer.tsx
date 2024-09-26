@@ -23,7 +23,11 @@ const overviewLinks = [
 ];
 
 const overviewItems = overviewLinks.map((link) => (
-  <NavLink key={link.label} to={link.link}>
+  <NavLink
+    key={link.label}
+    to={link.link}
+    onClick={() => window.scrollTo(0, 0)}
+  >
     {link.label}
   </NavLink>
 ));

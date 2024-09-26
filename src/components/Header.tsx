@@ -71,6 +71,7 @@ function Header() {
         if (opened) {
           close();
         }
+        window.scrollTo(0, 0);
       }}
     >
       <span className="link-content">{link.label}</span>
@@ -82,7 +83,11 @@ function Header() {
       <header className={headerClass} style={{ transform: headerTransform }}>
         <Container size="xl" className="header-inner">
           <Group>
-            <NavLink to={"/"}>
+            <NavLink
+              style={{ scrollBehavior: "smooth" }}
+              to={"/"}
+              onClick={() => window.scrollTo(0, 0)}
+            >
               <Image className="logo" src={logo} alt="Logo" />
             </NavLink>
             <Group gap={5} className={`header-links ${opened ? "opened" : ""}`}>
