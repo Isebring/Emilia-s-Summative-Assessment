@@ -7,12 +7,16 @@ import App from "./App";
 import "./main.css";
 import ErrorPage from "./pages/ErrorsPage";
 import LandingPage from "./pages/LandingPage";
+import MuddiestPoints from "./pages/MuddiestPoints";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    children: [{ path: "/", element: <LandingPage /> }],
+    children: [
+      { path: "/", element: <LandingPage /> },
+      { path: "/muddiestpoints", element: <MuddiestPoints /> },
+    ],
   },
 
   { path: "*", element: <ErrorPage /> },

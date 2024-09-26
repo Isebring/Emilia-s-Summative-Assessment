@@ -16,7 +16,7 @@ import "../css/Footer.css";
 
 const overviewLinks = [
   { link: "/about", label: "About Me" },
-  { link: "/contact", label: "Muddiest Points" },
+  { link: "/muddiestpoints", label: "Muddiest Points" },
   { link: "/contact", label: "Wrap ups" },
   { link: "/about", label: "Reflections" },
   //   { link: "/about", label: "Placeholder" },

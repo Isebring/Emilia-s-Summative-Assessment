@@ -1,19 +1,17 @@
-import { Container } from "@mantine/core";
 import { Outlet } from "react-router-dom";
-import Header from "./components/Header";
-import HeroVideo from "./components/HeroVideo";
 import Footer from "./components/Footer";
+import Header from "./components/Header";
+import { Box } from "@mantine/core";
 
 function App() {
   return (
     <>
       <Header />
-      <HeroVideo />
-      <Container>
+      <Box>
         <main>
           <Outlet />
         </main>
-      </Container>
+      </Box>
       <Footer />
     </>
   );

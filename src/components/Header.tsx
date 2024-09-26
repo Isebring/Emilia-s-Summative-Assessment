@@ -15,7 +15,7 @@ import "../css/Header.css";
 
 const links = [
   { link: "/sports", label: "About me" },
-  { link: "/favorites", label: "Muddiest Points" },
+  { link: "/muddiestpoints", label: "Muddiest Points" },
   { link: "/entertainment", label: "Wrap ups" },
   { link: "/four", label: "Reflections" },
 ];
