@@ -1,4 +1,4 @@
-import { Box, Container, Image, Paper, Text, Title } from "@mantine/core";
+import { Box, Container, Flex, Image, Paper, Text, Title } from "@mantine/core";
 import thinker from "../assets/imgs/thinker.png";
 import "../css/MuddiestPoints.css";
 
@@ -9,13 +9,15 @@ function MuddiestPoints() {
         <Title mt="md" className="title">
           My thoughts about "Muddiest Point"
         </Title>
-        <Box className="muddiest-layout">
-          <Image
-            src={thinker}
-            maw={300}
-            alt="illustration of a thinking philosopher"
-          />
-        </Box>
+        <Flex justify="center">
+          <Box>
+            <Image
+              src={thinker}
+              maw={300}
+              alt="illustration of a thinking philosopher"
+            />
+          </Box>
+        </Flex>
         <Paper mb="xl" mt="lg" className="parchment-paper">
           <Text>
             For me, the Muddiest Point has been really useful because it makes

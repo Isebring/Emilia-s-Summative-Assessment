@@ -4,12 +4,6 @@
   font-family: "cinzel", serif;
 }
 
-.muddiest-layout {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .parchment-paper {
   background-image: url("../assets/imgs/parchment-bg.jpg");
   background-size: cover;

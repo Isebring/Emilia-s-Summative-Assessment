@@ -106,9 +106,6 @@ iframe {
   animation: bounce 2s infinite;
 }
 
-.scrollable-content {
-}
-
 @media only screen and (max-width: 1200px) {
   .hero-text {
     font-size: 2rem;
