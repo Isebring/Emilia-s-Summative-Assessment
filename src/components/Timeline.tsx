@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import parchmentTexture from "../assets/imgs/parchment2.jpg";
 import Quote from "./BlockQuote"; // Import your Quote component
 
@@ -13,6 +13,7 @@ interface Particle {
 const HistoricalTimeline: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const backgroundImage = new Image();
+  const [speed, setSpeed] = useState(0.5);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -25,7 +26,6 @@ const HistoricalTimeline: React.FC = () => {
     canvas.height = window.innerHeight * (window.innerWidth < 768 ? 0.8 : 1);
 
     let scrollPosition = 0;
-    const speed = 1;
     const particleCount = window.innerWidth < 768 ? 50 : 100;
     const particles: Particle[] = [];
 
@@ -37,13 +37,13 @@ const HistoricalTimeline: React.FC = () => {
       { year: "1989", description: "Fall of the Berlin Wall" },
     ];
 
-    // Load the parchment texture
     backgroundImage.src = parchmentTexture;
     backgroundImage.onload = () => {
       animate();
     };
 
     function initParticles() {
+      particles.length = 0;
       for (let i = 0; i < particleCount; i++) {
         particles.push({
           x: Math.random() * canvas!.width,
@@ -56,7 +56,7 @@ const HistoricalTimeline: React.FC = () => {
     }
 
     function drawParticles() {
-      particles.forEach((particle: any) => {
+      particles.forEach((particle) => {
         ctx!.beginPath();
         ctx!.arc(
           particle.x,
@@ -69,7 +69,8 @@ const HistoricalTimeline: React.FC = () => {
         ctx!.fillStyle = `rgba(255, 255, 255, ${particle.opacity})`;
         ctx!.fill();
 
-        particle.y += particle.speed;
+        particle.y += particle.speed * speed;
+
         if (particle.y > canvas!.height) {
           particle.y = 0;
           particle.x = Math.random() * canvas!.width;
@@ -136,11 +137,12 @@ const HistoricalTimeline: React.FC = () => {
     const handleResize = () => {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
+      initParticles();
     };
     window.addEventListener("resize", handleResize);
 
     return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  }, [speed]);
 
   return (
     <div style={{ position: "relative", width: "100%", height: "100vh" }}>
@@ -160,6 +162,20 @@ const HistoricalTimeline: React.FC = () => {
           width: "100%",
           height: "100vh",
           backgroundColor: "#222",
+        }}
+      />
+      <input
+        type="range"
+        min="0"
+        max="5"
+        step="0.1"
+        value={speed}
+        onChange={(e) => setSpeed(parseFloat(e.target.value))}
+        style={{
+          position: "absolute",
+          top: "10px",
+          left: "10px",
+          zIndex: 20,
         }}
       />
     </div>

@@ -37,7 +37,7 @@ export function Footer() {
 
   return (
     <footer>
-      <NavLink to={"/"}>
+      <NavLink to={"/"} onClick={() => window.scrollTo(0, 0)}>
         <Image src={logo} mt="xs" alt="Emilia logo" w={140} />
       </NavLink>
 
