@@ -153,7 +153,7 @@ const HistoricalTimeline: React.FC = () => {
           top: "2rem",
           left: "5rem",
           fontWeight: "600",
-          zIndex: 10,
+          zIndex: 5,
           background: "#ffffff81",
         }}
       />
@@ -172,7 +172,7 @@ const HistoricalTimeline: React.FC = () => {
           position: "absolute",
           top: "10px",
           right: "101px",
-          zIndex: 20,
+          zIndex: 5,
           color: "#fff",
         }}
       >
@@ -190,7 +190,8 @@ const HistoricalTimeline: React.FC = () => {
           position: "absolute",
           top: "38px",
           right: "20px",
-          zIndex: 20,
+          zIndex: 5,
+          color: "#e6be8a",
         }}
       />
     </div>

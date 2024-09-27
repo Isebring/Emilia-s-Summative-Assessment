@@ -13,7 +13,7 @@ function Quote({ style }: QuoteProps) {
     <Blockquote
       className="title"
       iconSize={37}
-      color="blue"
+      color="#e6be8a"
       cite="– Emilia Johansson"
       icon={icon}
       mt="xl"
