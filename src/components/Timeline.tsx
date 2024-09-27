@@ -165,7 +165,21 @@ const HistoricalTimeline: React.FC = () => {
           backgroundColor: "#222",
         }}
       />
+      <label
+        htmlFor="speedRange"
+        style={{
+          fontFamily: "cinzel, sans-serif",
+          position: "absolute",
+          top: "10px",
+          right: "101px",
+          zIndex: 20,
+          color: "#fff",
+        }}
+      >
+        Speed:
+      </label>
       <input
+        id="speedRange"
         type="range"
         min="0"
         max="5"
@@ -174,8 +188,8 @@ const HistoricalTimeline: React.FC = () => {
         onChange={(e) => setSpeed(parseFloat(e.target.value))}
         style={{
           position: "absolute",
-          top: "10px",
-          left: "10px",
+          top: "38px",
+          right: "20px",
           zIndex: 20,
         }}
       />
