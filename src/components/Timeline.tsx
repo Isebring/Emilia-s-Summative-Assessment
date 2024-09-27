@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import parchmentTexture from "../assets/imgs/parchment2.jpg";
-import Quote from "./BlockQuote"; // Import your Quote component
+import "../css/HeroVideo.css";
+import Quote from "./BlockQuote";
 
 interface Particle {
   x: number;
@@ -13,7 +14,7 @@ interface Particle {
 const HistoricalTimeline: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const backgroundImage = new Image();
-  const [speed, setSpeed] = useState(0.5);
+  const [speed, setSpeed] = useState(0.3);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -113,11 +114,11 @@ const HistoricalTimeline: React.FC = () => {
         ctx!.shadowOffsetY = 3;
 
         ctx!.fillStyle = "#fff";
-        ctx!.font = "26px Arial";
+        ctx!.font = "18px Cinzel";
         ctx!.fillText(event.year, eventX - 20, eventY - 20);
 
         ctx!.fillStyle = "#fff";
-        ctx!.font = "18px Arial";
+        ctx!.font = "14px Cinzel";
         ctx!.fillText(event.description, eventX - 50, eventY + 30);
       });
 

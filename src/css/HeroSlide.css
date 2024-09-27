@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap");
+
 .hero-swiper-section {
   position: relative;
   width: 100%;
@@ -42,8 +44,10 @@
 .slide-content h1 {
   font-size: 2.5rem;
   margin-bottom: 10px;
+  font-family: "cinzel", serif;
 }
 
 .slide-content p {
   font-size: 1.2rem;
+  font-family: "cinzel", serif;
 }
