@@ -8,6 +8,18 @@
         "description": "Christopher Columbus' first voyage across the Atlantic Ocean led to the discovery of the New World, marking the beginning of European exploration and colonization of the Americas.",
         "image": "columbus-2.jpg",
         "rating": 3,
+        "trivia": [
+          {
+            "question": "What year did Columbus set sail from Spain?",
+            "options": ["1492", "1500", "1485", "1498"],
+            "correct_answer": "1492"
+          },
+          {
+            "question": "Which island did Columbus first land on?",
+            "options": ["San Salvador", "Cuba", "Hispaniola", "Puerto Rico"],
+            "correct_answer": "San Salvador"
+          }
+        ],
         "reflection": "Studying this event made me realize how interconnected the world became after Columbus' discovery. It was eye-opening to learn both the positive and negative impacts of European exploration.",
         "challenges_faced": "Understanding the biases in historical accounts was difficult. Many sources glorified Columbus without acknowledging the harm caused to indigenous populations.",
         "skills_gained": [
@@ -34,6 +46,18 @@
         "description": "The Spanish invasion of the Americas, led by Hernán Cortés, resulted in the fall of the Aztec Empire and the establishment of Spanish colonial rule over vast territories in the New World.",
         "image": "invasion-2.jpg",
         "rating": 1,
+        "trivia": [
+          {
+            "question": "Who led the Spanish invasion of the Americas?",
+            "options": ["Hernán Cortés", "Francisco Pizarro", "Christopher Columbus", "Ferdinand Magellan"],
+            "correct_answer": "Hernán Cortés"
+          },
+          {
+            "question": "Which empire fell due to the Spanish invasion?",
+            "options": ["Incan Empire", "Mayan Empire", "Aztec Empire", "Roman Empire"],
+            "correct_answer": "Aztec Empire"
+          }
+        ],
         "reflection": "This event taught me about the brutality of conquest and how it's shaped the modern world. It also made me more aware of how history is written by the victors.",
         "challenges_faced": "It was hard to grasp the scale of the suffering caused by the Spanish invasion. Also, balancing different historical perspectives was challenging.",
         "skills_gained": [
@@ -60,6 +84,18 @@
         "description": "The founding of Jamestown in 1607 marked the establishment of the first permanent English settlement in North America, laying the foundation for English colonization and expansion in the New World.",
         "image": "jamestown-2.jpg",
         "rating": 3,
+        "trivia": [
+          {
+            "question": "What year was Jamestown founded?",
+            "options": ["1607", "1612", "1620", "1635"],
+            "correct_answer": "1607"
+          },
+          {
+            "question": "Which company funded the Jamestown settlement?",
+            "options": ["The Virginia Company", "The East India Company", "The Hudson's Bay Company", "The Plymouth Company"],
+            "correct_answer": "The Virginia Company"
+          }
+        ],
         "reflection": "Learning about Jamestown helped me understand the roots of modern America. It also emphasized how fragile early settlements were and the resilience of settlers.",
          "challenges_faced": "I struggled to understand the economic motivations behind colonization and how it created lasting inequalities.",
          "skills_gained": [

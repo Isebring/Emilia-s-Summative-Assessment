@@ -7,6 +7,7 @@ import jamestownImg from "../assets/imgs/jamestown-2.jpg";
 import { EmojiRating } from "../components/Rating";
 import "../css/HistoricalDetailPage.css";
 import historicalData from "../data/historicalData.json";
+import Trivia from "../components/Trivia";
 
 const images: { [key: string]: string } = {
   "columbus-2.jpg": columbusImg,
@@ -81,6 +82,9 @@ const HistoricalDetailPage: React.FC = () => {
             ))}
           </ul>
         </Paper>
+        {occasion.trivia && occasion.trivia.length > 0 && (
+          <Trivia trivia={occasion.trivia} />
+        )}
       </section>
     </div>
   );
