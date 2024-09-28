@@ -1,0 +1,84 @@
+.detail-header {
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 40px;
+  height: 40rem;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: darken;
+}
+
+.detail-header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  font-family: "Cinzel", serif;
+}
+
+.detail-header p {
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+.detail-content {
+  max-width: 800px;
+  margin: 40px auto;
+}
+
+.detail-content p {
+  font-size: 1.25rem;
+  line-height: 1.6;
+}
+
+.detail-content h2 {
+  margin-top: 20px;
+  font-size: 2rem;
+  font-family: "Cinzel", serif;
+}
+
+.detail-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.detail-content li {
+  /* font-size: 1.1rem; */
+  margin-bottom: 10px;
+}
+
+.detail-content li strong {
+  font-weight: bold;
+}
+
+.rating-section {
+  font-family: "Cinzel", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.parchment-texture {
+  background-image: url("../assets/imgs/parchment-3.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #c4a484;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.parchment-texture p {
+  font-family: "cinzel", serif;
+  color: #5a4a2d;
+  font-size: 24px;
+  line-height: 1.6;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 470px) {
+  .detail-header {
+    height: 100%;
+  }
+}

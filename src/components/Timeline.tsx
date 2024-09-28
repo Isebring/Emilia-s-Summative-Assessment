@@ -31,9 +31,9 @@ const HistoricalTimeline: React.FC = () => {
     const particles: Particle[] = [];
 
     const historicalEvents = [
-      { year: "1492", description: "Columbus Discovers America" },
-      { year: "1776", description: "American Declaration of Independence" },
-      { year: "1945", description: "End of World War II" },
+      { year: "1492", description: "Columbus Discovers Americas" },
+      { year: "1519", description: "Spanish Invasion of the Americas" },
+      { year: "1607", description: "Founding of Jamestown" },
       { year: "1969", description: "Moon Landing" },
       { year: "1989", description: "Fall of the Berlin Wall" },
     ];

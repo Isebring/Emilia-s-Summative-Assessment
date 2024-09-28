@@ -6,6 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import "./main.css";
 import ErrorPage from "./pages/ErrorsPage";
+import HistoricalDetailPage from "./pages/HistoricalDetailPage";
 import LandingPage from "./pages/LandingPage";
 import MuddiestPoints from "./pages/MuddiestPoints";
 
@@ -15,7 +16,8 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       { path: "/", element: <LandingPage /> },
-      { path: "/muddiestpoints", element: <MuddiestPoints /> },
+      { path: "/muddiestpoint", element: <MuddiestPoints /> },
+      { path: "/occasion/:id", element: <HistoricalDetailPage /> },
     ],
   },
 

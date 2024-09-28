@@ -1,5 +1,8 @@
 import { Container, Grid, Image } from "@mantine/core";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+import columbus from "../assets/imgs/columbus-2.jpg";
+import spanish from "../assets/imgs/invasion-2.jpg";
 
 interface HistoricalEvent {
   image: string;
@@ -9,23 +12,23 @@ interface HistoricalEvent {
 
 const events: HistoricalEvent[] = [
   {
-    image:
-      "https://images.unsplash.com/photo-1624132321078-6e30395185da?q=80&w=2669&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D?",
+    image: columbus,
     title: "1492 - Columbus Discovers America",
     description:
       "Christopher Columbus makes his first voyage to the New World.",
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1613514944817-005ee9faebe3?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Year - Aztec Empire",
-    description: "Spanish Invasion",
+    image: spanish,
+    title: "1519 - Spanish Invasion of the Americas",
+    description:
+      "The Spanish invasion of the Americas, led by Hernán Cortés, resulted in the fall of the Aztec Empire.",
   },
   {
     image:
       "https://github.com/user-attachments/assets/ad1f88d4-bbcb-4548-b422-453022bb9600",
-    title: "1945 - End of World War II",
-    description: "World War II ends with the surrender of Germany and Japan.",
+    title: "1607 - Founding of Jamestown",
+    description:
+      "The founding of Jamestown in 1607 marked the establishment of the first permanent English settlement in North America.",
   },
 
   {
@@ -47,33 +50,51 @@ export function GridAsymmetrical() {
 
   return (
     <Container my="md">
-      <Grid>
+      <Grid style={{ fontFamily: "Cinzel, sans-serif" }}>
         {/* First row */}
         <Grid.Col span={{ base: 12, xs: 4 }}>
-          <ImageCard
-            event={events[0]}
-            index={0}
-            hovered={hovered}
-            setHovered={setHovered}
-          />
+          <Link
+            style={{ textDecoration: "none" }}
+            to="/occasion/1"
+            onClick={() => window.scrollTo(0, 0)}
+          >
+            <ImageCard
+              event={events[0]}
+              index={0}
+              hovered={hovered}
+              setHovered={setHovered}
+            />
+          </Link>
         </Grid.Col>
         <Grid.Col span={{ base: 12, xs: 8 }}>
-          <ImageCard
-            event={events[1]}
-            index={1}
-            hovered={hovered}
-            setHovered={setHovered}
-          />
+          <Link
+            style={{ textDecoration: "none" }}
+            to="/occasion/2"
+            onClick={() => window.scrollTo(0, 0)}
+          >
+            <ImageCard
+              event={events[1]}
+              index={1}
+              hovered={hovered}
+              setHovered={setHovered}
+            />
+          </Link>
         </Grid.Col>
 
         {/* Second row */}
         <Grid.Col span={{ base: 12, xs: 8 }}>
-          <ImageCard
-            event={events[2]}
-            index={2}
-            hovered={hovered}
-            setHovered={setHovered}
-          />
+          <Link
+            style={{ textDecoration: "none" }}
+            to="/occasion/3"
+            onClick={() => window.scrollTo(0, 0)}
+          >
+            <ImageCard
+              event={events[2]}
+              index={2}
+              hovered={hovered}
+              setHovered={setHovered}
+            />
+          </Link>
         </Grid.Col>
         <Grid.Col span={{ base: 12, xs: 4 }}>
           <ImageCard
