@@ -1,4 +1,4 @@
-import { Button } from "@mantine/core";
+import { Button, Container } from "@mantine/core";
 import React, { useState } from "react";
 
 interface TriviaProps {
@@ -30,64 +30,66 @@ const Trivia: React.FC<TriviaProps> = ({ trivia }) => {
   };
 
   return (
-    <div className="trivia-section">
-      <h2>Trivia Quiz</h2>
-      {trivia.map((q, index) => (
-        <div key={index} className="trivia-question">
-          <p>
-            <strong>{q.question}</strong>
-          </p>
-          <div className="trivia-options">
-            {q.options.map((option, optIndex) => (
-              <button
-                key={optIndex}
-                className={`trivia-option ${
-                  selectedAnswers[index] === option ? "selected" : ""
-                } ${
-                  showResults && option === q.correct_answer
-                    ? "correct"
-                    : showResults &&
-                      selectedAnswers[index] === option &&
-                      option !== q.correct_answer
-                    ? "incorrect"
-                    : ""
-                }`}
-                onClick={() => handleAnswerSelect(index, option)}
-                disabled={showResults}
-              >
-                {option}
-              </button>
-            ))}
+    <Container>
+      <div className="trivia-section">
+        <h2>Trivia Quiz</h2>
+        {trivia.map((q, index) => (
+          <div key={index} className="trivia-question">
+            <p>
+              <strong>{q.question}</strong>
+            </p>
+            <div className="trivia-options">
+              {q.options.map((option, optIndex) => (
+                <button
+                  key={optIndex}
+                  className={`trivia-option ${
+                    selectedAnswers[index] === option ? "selected" : ""
+                  } ${
+                    showResults && option === q.correct_answer
+                      ? "correct"
+                      : showResults &&
+                        selectedAnswers[index] === option &&
+                        option !== q.correct_answer
+                      ? "incorrect"
+                      : ""
+                  }`}
+                  onClick={() => handleAnswerSelect(index, option)}
+                  disabled={showResults}
+                >
+                  {option}
+                </button>
+              ))}
+            </div>
           </div>
-        </div>
-      ))}
-      {!showResults && (
-        <Button
-          style={{ fontFamily: "var(--mantine-font-family" }}
-          variant="outline"
-          color="dark"
-          radius="xl"
-          size="md"
-          onClick={handleSubmit}
-        >
-          Submit Answers
-        </Button>
-      )}
-      {showResults && (
-        <div className="trivia-results">
-          <h3>Results</h3>
-          <ul>
-            {trivia.map((q, index) => (
-              <li key={index}>
-                <strong>{q.question}</strong> - Your answer:{" "}
-                {selectedAnswers[index] || "None"} - Correct answer:{" "}
-                {q.correct_answer}
-              </li>
-            ))}
-          </ul>
-        </div>
-      )}
-    </div>
+        ))}
+        {!showResults && (
+          <Button
+            style={{ fontFamily: "var(--mantine-font-family" }}
+            variant="outline"
+            color="dark"
+            radius="xl"
+            size="md"
+            onClick={handleSubmit}
+          >
+            Submit Answers
+          </Button>
+        )}
+        {showResults && (
+          <div className="trivia-results">
+            <h3>Results</h3>
+            <ul>
+              {trivia.map((q, index) => (
+                <li key={index}>
+                  <strong>{q.question}</strong> - Your answer:{" "}
+                  {selectedAnswers[index] || "None"} - Correct answer:{" "}
+                  {q.correct_answer}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+    </Container>
   );
 };
 
