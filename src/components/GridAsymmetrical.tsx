@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import columbus from "../assets/imgs/columbus-2.jpg";
 import spanish from "../assets/imgs/invasion-2.jpg";
+import plantation from "../assets/imgs/plantation-2.jpg";
 
 interface HistoricalEvent {
   image: string;
@@ -32,10 +33,10 @@ const events: HistoricalEvent[] = [
   },
 
   {
-    image:
-      "https://github.com/user-attachments/assets/9f84d49d-34ce-4445-8c30-fda248f37380",
-    title: "1969 - Moon Landing",
-    description: "Apollo 11 successfully lands the first humans on the moon.",
+    image: plantation,
+    title: "16th-19th century - Triangular Trade",
+    description:
+      "The Triangular Trade was a system of trade that connected Europe, Africa, and the Americas.",
   },
   {
     image:
@@ -97,12 +98,18 @@ export function GridAsymmetrical() {
           </Link>
         </Grid.Col>
         <Grid.Col span={{ base: 12, xs: 4 }}>
-          <ImageCard
-            event={events[3]}
-            index={3}
-            hovered={hovered}
-            setHovered={setHovered}
-          />
+          <Link
+            style={{ textDecoration: "none" }}
+            to="/occasion/4"
+            onClick={() => window.scrollTo(0, 0)}
+          >
+            <ImageCard
+              event={events[3]}
+              index={3}
+              hovered={hovered}
+              setHovered={setHovered}
+            />
+          </Link>
         </Grid.Col>
 
         {/* Third row */}

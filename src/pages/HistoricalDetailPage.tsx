@@ -4,15 +4,17 @@ import { useParams } from "react-router-dom";
 import columbusImg from "../assets/imgs/columbus-2.jpg";
 import invasionImg from "../assets/imgs/invasion-2.jpg";
 import jamestownImg from "../assets/imgs/jamestown-2.jpg";
+import plantationImg from "../assets/imgs/plantation-2.jpg";
 import { EmojiRating } from "../components/Rating";
+import Trivia from "../components/Trivia";
 import "../css/HistoricalDetailPage.css";
 import historicalData from "../data/historicalData.json";
-import Trivia from "../components/Trivia";
 
 const images: { [key: string]: string } = {
   "columbus-2.jpg": columbusImg,
   "invasion-2.jpg": invasionImg,
   "jamestown-2.jpg": jamestownImg,
+  "plantation-2.jpg": plantationImg,
 };
 
 // Detail page component

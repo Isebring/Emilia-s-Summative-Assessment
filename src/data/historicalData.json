@@ -113,6 +113,48 @@
             "event": "The first African slaves arrive in Jamestown."
           }
         ]
-      }
+      }, 
+      {
+        "id": 4,
+        "title": "The Triangular Trade",
+        "date": "16th to 19th Centuries",
+        "location": "Atlantic Ocean",
+        "description": "The Triangular Trade was a system of transatlantic trade between Europe, Africa, and the Americas, involving the exchange of goods, slaves, and raw materials. It played a significant role in shaping economic and social systems in all three regions.",
+        "image": "plantation-2.jpg",
+        "rating": 1,
+        "trivia": [
+          {
+            "question": "Which three regions were involved in the Triangular Trade?",
+            "options": ["Europe, Africa, Americas", "Asia, Europe, Africa", "Africa, Asia, Americas", "Europe, Asia, Americas"],
+            "correct_answer": "Europe, Africa, Americas"
+          },
+          {
+            "question": "What was commonly traded from Africa to the Americas during the Triangular Trade?",
+            "options": ["Slaves", "Cotton", "Tobacco", "Gold"],
+            "correct_answer": "Slaves"
+          }
+        ],
+        "reflection": "Studying the Triangular Trade deepened my understanding of how interconnected global economies were, even in the early modern period. It also highlighted the devastating human cost of the transatlantic slave trade.",
+        "challenges_faced": "It was challenging to fully comprehend the scale of human suffering involved in the slave trade and how it shaped modern societies.",
+        "skills_gained": [
+          "Understanding global economic systems",
+          "Awareness of the human impact of historical events",
+          "Critical thinking in analyzing historical sources"
+        ],
+        "key_events": [
+          {
+            "year": 1500,
+            "event": "The Triangular Trade begins with the exchange of goods between Europe and Africa."
+          },
+          {
+            "year": 1619,
+            "event": "First African slaves arrive in Jamestown, marking the expansion of the slave trade to English colonies."
+          },
+          {
+            "year": 1807,
+            "event": "Britain abolishes the slave trade, marking the beginning of the end for the Triangular Trade."
+          }
+        ]
+      }   
     ]
   }

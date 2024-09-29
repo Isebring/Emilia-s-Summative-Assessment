@@ -6,6 +6,7 @@ import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import columbus from "../assets/imgs/columbus.jpg";
 import jamestown from "../assets/imgs/jamestown.jpg";
+import plantation from "../assets/imgs/plantation.jpg";
 import spanish from "../assets/imgs/spanish-invasion.jpg";
 import "../css/HeroSlide.css";
 
@@ -86,6 +87,30 @@ const HeroSlide: React.FC = () => {
                 <p>
                   The colonization of Jamestown in 1607 marked the beginning of
                   permanent English settlement in mainland North America.
+                </p>
+              </div>
+            </div>
+          </Link>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Link
+            style={{ textDecoration: "none" }}
+            to="/occasion/4"
+            onClick={() => window.scrollTo(0, 0)}
+          >
+            <div
+              className="hero-slide"
+              style={{
+                backgroundImage: `url(${plantation})`,
+                backgroundPosition: "center",
+              }}
+            >
+              <div className="slide-content">
+                <h1>Triangular Trade: 16th to 19th centuries</h1>
+                <p>
+                  The triangular trade involved the exchange of slaves, raw
+                  materials, and manufactured goods between Africa, the
+                  Americas, and Europe.
                 </p>
               </div>
             </div>
