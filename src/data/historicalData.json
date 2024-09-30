@@ -1,160 +1,200 @@
 {
-    "occasions": [
-      {
-        "id": 1,
-        "title": "Columbus Discovers the New World",
-        "date": "1492-10-12",
-        "location": "San Salvador Island",
-        "description": "Christopher Columbus' first voyage across the Atlantic Ocean led to the discovery of the New World, marking the beginning of European exploration and colonization of the Americas.",
-        "image": "columbus-2.jpg",
-        "rating": 3,
-        "trivia": [
-          {
-            "question": "What year did Columbus set sail from Spain?",
-            "options": ["1492", "1500", "1485", "1498"],
-            "correct_answer": "1492"
-          },
-          {
-            "question": "Which island did Columbus first land on?",
-            "options": ["San Salvador", "Cuba", "Hispaniola", "Puerto Rico"],
-            "correct_answer": "San Salvador"
-          }
-        ],
-        "reflection": "Studying this event made me realize how interconnected the world became after Columbus' discovery. It was eye-opening to learn both the positive and negative impacts of European exploration.",
-        "challenges_faced": "Understanding the biases in historical accounts was difficult. Many sources glorified Columbus without acknowledging the harm caused to indigenous populations.",
-        "skills_gained": [
-          "Critical analysis of historical events",
-          "Understanding the impact of European colonization",
-          "Research skills"
-        ],
-        "key_events": [
-          {
-            "year": 1492,
-            "event": "Columbus sets sail from Spain on August 3rd."
-          },
-          {
-            "year": 1492,
-            "event": "Columbus reaches the Bahamas on October 12th."
-          }
-        ]
-      },
-      {
-        "id": 2,
-        "title": "Spanish Invasion of the Americas",
-        "date": "1519-11-08",
-        "location": "Tenochtitlan, Mexico",
-        "description": "The Spanish invasion of the Americas, led by Hernán Cortés, resulted in the fall of the Aztec Empire and the establishment of Spanish colonial rule over vast territories in the New World.",
-        "image": "invasion-2.jpg",
-        "rating": 1,
-        "trivia": [
-          {
-            "question": "Who led the Spanish invasion of the Americas?",
-            "options": ["Hernán Cortés", "Francisco Pizarro", "Christopher Columbus", "Ferdinand Magellan"],
-            "correct_answer": "Hernán Cortés"
-          },
-          {
-            "question": "Which empire fell due to the Spanish invasion?",
-            "options": ["Incan Empire", "Mayan Empire", "Aztec Empire", "Roman Empire"],
-            "correct_answer": "Aztec Empire"
-          }
-        ],
-        "reflection": "This event taught me about the brutality of conquest and how it's shaped the modern world. It also made me more aware of how history is written by the victors.",
-        "challenges_faced": "It was hard to grasp the scale of the suffering caused by the Spanish invasion. Also, balancing different historical perspectives was challenging.",
-        "skills_gained": [
-          "Comparative historical analysis",
-          "Perspective-taking",
-          "Empathy through historical context"
-        ],
-        "key_events": [
-          {
-            "year": 1519,
-            "event": "Cortés arrives in Mexico and begins his march toward Tenochtitlan."
-          },
-          {
-            "year": 1521,
-            "event": "The Aztec Empire falls after the siege of Tenochtitlan."
-          }
-        ]
-      },
-      {
-        "id": 3,
-        "title": "Founding of Jamestown",
-        "date": "1607-05-14",
-        "location": "Jamestown, Virginia",
-        "description": "The founding of Jamestown in 1607 marked the establishment of the first permanent English settlement in North America, laying the foundation for English colonization and expansion in the New World.",
-        "image": "jamestown-2.jpg",
-        "rating": 3,
-        "trivia": [
-          {
-            "question": "What year was Jamestown founded?",
-            "options": ["1607", "1612", "1620", "1635"],
-            "correct_answer": "1607"
-          },
-          {
-            "question": "Which company funded the Jamestown settlement?",
-            "options": ["The Virginia Company", "The East India Company", "The Hudson's Bay Company", "The Plymouth Company"],
-            "correct_answer": "The Virginia Company"
-          }
-        ],
-        "reflection": "Learning about Jamestown helped me understand the roots of modern America. It also emphasized how fragile early settlements were and the resilience of settlers.",
-         "challenges_faced": "I struggled to understand the economic motivations behind colonization and how it created lasting inequalities.",
-         "skills_gained": [
-          "Understanding economic and social factors in colonization",
-         "Deepened historical research skills",
-         "Ability to synthesize complex information"
+  "occasions": [
+    {
+      "id": 1,
+      "title": "Columbus Discovers the New World",
+      "date": "1492-10-12",
+      "location": "San Salvador Island",
+      "description": "Christopher Columbus' first voyage across the Atlantic Ocean led to the discovery of the New World, marking the beginning of European exploration and colonization of the Americas.",
+      "image": "columbus-2.jpg",
+      "rating": 3,
+      "trivia": [
+        {
+          "question": "What year did Columbus set sail from Spain?",
+          "options": ["1492", "1500", "1485", "1498"],
+          "correct_answer": "1492"
+        },
+        {
+          "question": "Which island did Columbus first land on?",
+          "options": ["San Salvador", "Cuba", "Hispaniola", "Puerto Rico"],
+          "correct_answer": "San Salvador"
+        },
+        {
+          "question": "How many ships did Columbus have on his first voyage?",
+          "options": ["2", "3", "4", "5"],
+          "correct_answer": "3"
+        },
+        {
+          "question": "What was Columbus searching for when he set sail?",
+          "options": ["A new route to India", "The Americas", "Gold", "Spices"],
+          "correct_answer": "A new route to India"
+        }
       ],
-        "key_events": [
-          {
-            "year": 1607,
-            "event": "English settlers establish Jamestown on May 14th."
-          },
-          {
-            "year": 1619,
-            "event": "The first African slaves arrive in Jamestown."
-          }
-        ]
-      }, 
-      {
-        "id": 4,
-        "title": "The Triangular Trade",
-        "date": "16th to 19th Centuries",
-        "location": "Atlantic Ocean",
-        "description": "The Triangular Trade was a system of transatlantic trade between Europe, Africa, and the Americas, involving the exchange of goods, slaves, and raw materials. It played a significant role in shaping economic and social systems in all three regions.",
-        "image": "plantation-2.jpg",
-        "rating": 1,
-        "trivia": [
-          {
-            "question": "Which three regions were involved in the Triangular Trade?",
-            "options": ["Europe, Africa, Americas", "Asia, Europe, Africa", "Africa, Asia, Americas", "Europe, Asia, Americas"],
-            "correct_answer": "Europe, Africa, Americas"
-          },
-          {
-            "question": "What was commonly traded from Africa to the Americas during the Triangular Trade?",
-            "options": ["Slaves", "Cotton", "Tobacco", "Gold"],
-            "correct_answer": "Slaves"
-          }
-        ],
-        "reflection": "Studying the Triangular Trade deepened my understanding of how interconnected global economies were, even in the early modern period. It also highlighted the devastating human cost of the transatlantic slave trade.",
-        "challenges_faced": "It was challenging to fully comprehend the scale of human suffering involved in the slave trade and how it shaped modern societies.",
-        "skills_gained": [
-          "Understanding global economic systems",
-          "Awareness of the human impact of historical events",
-          "Critical thinking in analyzing historical sources"
-        ],
-        "key_events": [
-          {
-            "year": 1500,
-            "event": "The Triangular Trade begins with the exchange of goods between Europe and Africa."
-          },
-          {
-            "year": 1619,
-            "event": "First African slaves arrive in Jamestown, marking the expansion of the slave trade to English colonies."
-          },
-          {
-            "year": 1807,
-            "event": "Britain abolishes the slave trade, marking the beginning of the end for the Triangular Trade."
-          }
-        ]
-      }   
-    ]
-  }
+      "reflection": "Studying this event made me realize how interconnected the world became after Columbus' discovery. It was eye-opening to learn both the positive and negative impacts of European exploration.",
+      "challenges_faced": "Understanding the biases in historical accounts was difficult. Many sources glorified Columbus without acknowledging the harm caused to indigenous populations.",
+      "skills_gained": [
+        "Critical analysis of historical events",
+        "Understanding the impact of European colonization",
+        "Research skills"
+      ],
+      "key_events": [
+        {
+          "year": 1492,
+          "event": "Columbus sets sail from Spain on August 3rd."
+        },
+        {
+          "year": 1492,
+          "event": "Columbus reaches the Bahamas on October 12th."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Spanish Invasion of the Americas",
+      "date": "1519-11-08",
+      "location": "Tenochtitlan, Mexico",
+      "description": "The Spanish invasion of the Americas, led by Hernán Cortés, resulted in the fall of the Aztec Empire and the establishment of Spanish colonial rule over vast territories in the New World.",
+      "image": "invasion-2.jpg",
+      "rating": 1,
+      "trivia": [
+        {
+          "question": "Who led the Spanish invasion of the Americas?",
+          "options": ["Hernán Cortés", "Francisco Pizarro", "Christopher Columbus", "Ferdinand Magellan"],
+          "correct_answer": "Hernán Cortés"
+        },
+        {
+          "question": "Which empire fell due to the Spanish invasion?",
+          "options": ["Incan Empire", "Mayan Empire", "Aztec Empire", "Roman Empire"],
+          "correct_answer": "Aztec Empire"
+        },
+        {
+          "question": "What was the name of the Aztec emperor during the invasion?",
+          "options": ["Montezuma II", "Atahualpa", "Pachacuti", "Huayna Capac"],
+          "correct_answer": "Montezuma II"
+        },
+        {
+          "question": "What disease helped the Spanish conquer the Aztec Empire?",
+          "options": ["Smallpox", "Malaria", "Typhus", "Measles"],
+          "correct_answer": "Smallpox"
+        }
+      ],
+      "reflection": "This event taught me about the brutality of conquest and how it's shaped the modern world. It also made me more aware of how history is written by the victors.",
+      "challenges_faced": "It was hard to grasp the scale of the suffering caused by the Spanish invasion. Also, balancing different historical perspectives was challenging.",
+      "skills_gained": [
+        "Comparative historical analysis",
+        "Perspective-taking",
+        "Empathy through historical context"
+      ],
+      "key_events": [
+        {
+          "year": 1519,
+          "event": "Cortés arrives in Mexico and begins his march toward Tenochtitlan."
+        },
+        {
+          "year": 1521,
+          "event": "The Aztec Empire falls after the siege of Tenochtitlan."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Founding of Jamestown",
+      "date": "1607-05-14",
+      "location": "Jamestown, Virginia",
+      "description": "The founding of Jamestown in 1607 marked the establishment of the first permanent English settlement in North America, laying the foundation for English colonization and expansion in the New World.",
+      "image": "jamestown-2.jpg",
+      "rating": 3,
+      "trivia": [
+        {
+          "question": "What year was Jamestown founded?",
+          "options": ["1607", "1612", "1620", "1635"],
+          "correct_answer": "1607"
+        },
+        {
+          "question": "Which company funded the Jamestown settlement?",
+          "options": ["The Virginia Company", "The East India Company", "The Hudson's Bay Company", "The Plymouth Company"],
+          "correct_answer": "The Virginia Company"
+        },
+        {
+          "question": "Who was the leader of the Jamestown colony?",
+          "options": ["John Smith", "William Bradford", "John Rolfe", "Henry Hudson"],
+          "correct_answer": "John Smith"
+        },
+        {
+          "question": "What cash crop helped Jamestown become profitable?",
+          "options": ["Tobacco", "Cotton", "Corn", "Wheat"],
+          "correct_answer": "Tobacco"
+        }
+      ],
+      "reflection": "Learning about Jamestown helped me understand the roots of modern America. It also emphasized how fragile early settlements were and the resilience of settlers.",
+      "challenges_faced": "I struggled to understand the economic motivations behind colonization and how it created lasting inequalities.",
+      "skills_gained": [
+        "Understanding economic and social factors in colonization",
+        "Deepened historical research skills",
+        "Ability to synthesize complex information"
+      ],
+      "key_events": [
+        {
+          "year": 1607,
+          "event": "English settlers establish Jamestown on May 14th."
+        },
+        {
+          "year": 1619,
+          "event": "The first African slaves arrive in Jamestown."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "title": "The Triangular Trade",
+      "date": "16th to 19th Centuries",
+      "location": "Atlantic Ocean",
+      "description": "The Triangular Trade was a system of transatlantic trade between Europe, Africa, and the Americas, involving the exchange of goods, slaves, and raw materials. It played a significant role in shaping economic and social systems in all three regions.",
+      "image": "plantation-2.jpg",
+      "rating": 1,
+      "trivia": [
+        {
+          "question": "Which three regions were involved in the Triangular Trade?",
+          "options": ["Europe, Africa, Americas", "Asia, Europe, Africa", "Africa, Asia, Americas", "Europe, Asia, Americas"],
+          "correct_answer": "Europe, Africa, Americas"
+        },
+        {
+          "question": "What was commonly traded from Africa to the Americas during the Triangular Trade?",
+          "options": ["Slaves", "Cotton", "Tobacco", "Gold"],
+          "correct_answer": "Slaves"
+        },
+        {
+          "question": "What goods were sent from the Americas to Europe in the Triangular Trade?",
+          "options": ["Sugar, tobacco, cotton", "Slaves, gold, spices", "Tea, silk, porcelain", "Iron, silver, gold"],
+          "correct_answer": "Sugar, tobacco, cotton"
+        },
+        {
+          "question": "Which European country played a major role in the Triangular Trade?",
+          "options": ["Portugal", "France", "Spain", "Britain"],
+          "correct_answer": "Britain"
+        }
+      ],
+      "reflection": "Studying the Triangular Trade deepened my understanding of how interconnected global economies were, even in the early modern period. It also highlighted the devastating human cost of the transatlantic slave trade.",
+      "challenges_faced": "It was challenging to fully comprehend the scale of human suffering involved in the slave trade and how it shaped modern societies.",
+      "skills_gained": [
+        "Understanding global economic systems",
+        "Awareness of the human impact of historical events",
+        "Critical thinking in analyzing historical sources"
+      ],
+      "key_events": [
+        {
+          "year": 1500,
+          "event": "The Triangular Trade begins with the exchange of goods between Europe and Africa."
+        },
+        {
+          "year": 1619,
+          "event": "First African slaves arrive in Jamestown, marking the expansion of the slave trade to English colonies."
+        },
+        {
+          "year": 1807,
+          "event": "Britain abolishes the slave trade, marking the beginning of the end for the Triangular Trade."
+        }
+      ]
+    }
+  ]
+}
