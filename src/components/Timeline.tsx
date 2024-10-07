@@ -31,11 +31,11 @@ const HistoricalTimeline: React.FC = () => {
     const particles: Particle[] = [];
 
     const historicalEvents = [
-      { year: "1492", description: "Columbus Discovers Americas" },
-      { year: "1519", description: "Spanish Invasion of the Americas" },
-      { year: "1607", description: "Founding of Jamestown" },
-      { year: "1969", description: "Moon Landing" },
-      { year: "1989", description: "Fall of the Berlin Wall" },
+      { id: 1, year: "1492", description: "Columbus Discovers Americas" },
+      { id: 2, year: "1519", description: "Spanish Invasion of the Americas" },
+      { id: 3, year: "1607", description: "Founding of Jamestown" },
+      { id: 4, year: "1608", description: "The Triangular Trade begins" },
+      { id: 5, year: "1989", description: "Fall of the Berlin Wall" },
     ];
 
     backgroundImage.src = parchmentTexture;

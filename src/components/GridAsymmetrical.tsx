@@ -2,8 +2,10 @@ import { Container, Grid, Image } from "@mantine/core";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import columbus from "../assets/imgs/columbus-2.jpg";
+import historyPattern from "../assets/imgs/history-pattern.jpg";
 import spanish from "../assets/imgs/invasion-2.jpg";
 import plantation from "../assets/imgs/plantation-2.jpg";
+import "../css/MuddiestPoints.css";
 
 interface HistoricalEvent {
   image: string;
@@ -34,7 +36,7 @@ const events: HistoricalEvent[] = [
 
   {
     image: plantation,
-    title: "16th-19th century - Triangular Trade",
+    title: "16th-19th Centuries - Triangular Trade",
     description:
       "The Triangular Trade was a system of trade that connected Europe, Africa, and the Americas.",
   },
@@ -50,7 +52,17 @@ export function GridAsymmetrical() {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (
-    <Container my="md">
+    <Container
+      className="container-custom"
+      style={{
+        backgroundImage: `url(${historyPattern})`,
+        // backgroundRepeat: "no-repeat",
+        // backgroundSize: "contain",
+        paddingTop: "1rem",
+        paddingBottom: "1rem",
+      }}
+      my="md"
+    >
       <Grid style={{ fontFamily: "Cinzel, sans-serif" }}>
         {/* First row */}
         <Grid.Col span={{ base: 12, xs: 4 }}>

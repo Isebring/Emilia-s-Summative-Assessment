@@ -6,6 +6,6 @@
 
 body {
   background-color: #242424;
-  background: url("/src/assets/imgs/white-gradient.jpg") no-repeat center fixed;
+  background: url("/src/assets/imgs/white-gradient.jpg") no-repeat;
   background-size: cover;
 }

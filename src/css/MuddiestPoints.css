@@ -21,3 +21,7 @@
   line-height: 1.6;
   font-weight: 600;
 }
+
+.container-custom {
+  margin: 0 !important;
+}
