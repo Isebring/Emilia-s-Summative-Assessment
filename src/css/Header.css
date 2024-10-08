@@ -51,8 +51,9 @@ header {
   padding: 0.5rem 0.75rem;
   border-radius: var(--mantine-radius-sm);
   text-decoration: none;
-  color: #2b2a2a;
+  color: #1a1a1a;
   font-weight: 500;
+  font-family: "cinzel", serif;
 }
 
 .link.active,
