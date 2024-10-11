@@ -5,6 +5,7 @@ import columbus from "../assets/imgs/columbus-2.jpg";
 import historyPattern from "../assets/imgs/history-pattern.jpg";
 import spanish from "../assets/imgs/invasion-2.jpg";
 import plantation from "../assets/imgs/plantation-2.jpg";
+import teaAct from "../assets/imgs/tea-act-2.jpg";
 import "../css/MuddiestPoints.css";
 
 interface HistoricalEvent {
@@ -41,10 +42,10 @@ const events: HistoricalEvent[] = [
       "The Triangular Trade was a system of trade that connected Europe, Africa, and the Americas.",
   },
   {
-    image:
-      "https://github.com/user-attachments/assets/1e5b4d32-e27e-444f-9f0c-e81cddeb9297",
-    title: "1989 - Fall of the Berlin Wall",
-    description: "The Berlin Wall falls, symbolizing the end of the Cold War.",
+    image: teaAct,
+    title: "1773 - Tea Act",
+    description:
+      "The Tea Act of 1773 was a British law that granted the East India Company a monopoly on the American tea trade.",
   },
 ];
 
@@ -126,12 +127,18 @@ export function GridAsymmetrical() {
 
         {/* Third row */}
         <Grid.Col span={{ base: 12, xs: 3 }}>
-          <ImageCard
-            event={events[4]}
-            index={4}
-            hovered={hovered}
-            setHovered={setHovered}
-          />
+          <Link
+            style={{ textDecoration: "none" }}
+            to="/occasion/5"
+            onClick={() => window.scrollTo(0, 0)}
+          >
+            <ImageCard
+              event={events[4]}
+              index={4}
+              hovered={hovered}
+              setHovered={setHovered}
+            />
+          </Link>
         </Grid.Col>
         <Grid.Col span={{ base: 12, xs: 3 }}>
           {/* Duplicate or add a new event */}

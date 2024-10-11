@@ -8,6 +8,7 @@ import columbus from "../assets/imgs/columbus.jpg";
 import jamestown from "../assets/imgs/jamestown.jpg";
 import plantation from "../assets/imgs/plantation.jpg";
 import spanish from "../assets/imgs/spanish-invasion.jpg";
+import teaAct from "../assets/imgs/tea_act.jpg";
 import "../css/HeroSlide.css";
 
 const HeroSlide: React.FC = () => {
@@ -111,6 +112,29 @@ const HeroSlide: React.FC = () => {
                   The triangular trade involved the exchange of slaves, raw
                   materials, and manufactured goods between Africa, the
                   Americas, and Europe.
+                </p>
+              </div>
+            </div>
+          </Link>
+        </SwiperSlide>
+        <SwiperSlide>
+          <Link
+            style={{ textDecoration: "none" }}
+            to="/occasion/5"
+            onClick={() => window.scrollTo(0, 0)}
+          >
+            <div
+              className="hero-slide"
+              style={{
+                backgroundImage: `url(${teaAct})`,
+                backgroundPosition: "center",
+              }}
+            >
+              <div className="slide-content">
+                <h1>Tea Act: 1773</h1>
+                <p>
+                  The Tea Act of 1773 was a British law that granted the East
+                  India Company a monopoly on the American tea trade.
                 </p>
               </div>
             </div>

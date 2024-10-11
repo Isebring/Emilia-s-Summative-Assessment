@@ -195,6 +195,64 @@
           "event": "Britain abolishes the slave trade, marking the beginning of the end for the Triangular Trade."
         }
       ]
+    },
+    {
+      "id": 5,
+      "title": "Tea Act of 1773",
+      "date": "1773-05-10",
+      "location": "British American Colonies",
+      "description": "The Tea Act of 1773 was a British law that granted the East India Company a monopoly on the American tea trade. It was one of the key events leading to the American Revolution, eventually resulting in the Boston Tea Party.",
+      "image": "tea-act-2.jpg",
+      "rating": 2,
+      "trivia": [
+        {
+          "question": "What was the main purpose of the Tea Act?",
+          "options": [
+            "To help the struggling East India Company",
+            "To raise revenue for the British Crown",
+            "To punish the American colonies",
+            "To reduce the price of tea in Britain"
+          ],
+          "correct_answer": "To help the struggling East India Company"
+        },
+        {
+          "question": "Which event was a direct response to the Tea Act?",
+          "options": ["Boston Tea Party", "Lexington and Concord", "Declaration of Independence", "Stamp Act Congress"],
+          "correct_answer": "Boston Tea Party"
+        },
+        {
+          "question": "Which group famously protested the Tea Act by dumping tea into Boston Harbor?",
+          "options": ["Sons of Liberty", "Minutemen", "Patriots", "Continental Congress"],
+          "correct_answer": "Sons of Liberty"
+        },
+        {
+          "question": "What was the significance of the Tea Act in American history?",
+          "options": [
+            "It escalated tensions between Britain and the colonies.",
+            "It ended the American Revolution.",
+            "It increased trade between Britain and the colonies.",
+            "It gave the colonies independence from Britain."
+          ],
+          "correct_answer": "It escalated tensions between Britain and the colonies."
+        }
+      ],
+      "reflection": "The Tea Act showed me how seemingly small economic policies can lead to significant political consequences. It also helped me understand the deep-seated frustrations the colonists had with British rule.",
+      "challenges_faced": "It was difficult to understand the complex economic relationships between Britain, the East India Company, and the American colonies.",
+      "skills_gained": [
+        "Understanding economic causes of political conflict",
+        "Analyzing colonial resistance to imperial rule",
+        "Researching primary historical sources"
+      ],
+      "key_events": [
+        {
+          "year": 1773,
+          "event": "The Tea Act is passed by the British Parliament on May 10th."
+        },
+        {
+          "year": 1773,
+          "event": "The Boston Tea Party occurs on December 16th as a response to the Tea Act."
+        }
+      ]
     }
   ]
 }
