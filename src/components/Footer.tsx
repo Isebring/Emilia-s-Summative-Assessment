@@ -100,12 +100,12 @@ export function Footer() {
           className="divider-vertical"
         />
 
-        <div className="igdb-api-section">
+        <div className="sbcc-section">
           <Title order={3} mb={"lg"} mt={"md"}>
             SBCC
           </Title>
           <NavLink
-            aria-label="Learn more about IGDB (opens in a new tab)"
+            aria-label="Learn more about SBCC (opens in a new tab)"
             to={"https://sbcc.edu/"}
             target="blank"
           >

@@ -14,7 +14,7 @@ import logo from "../assets/imgs/emilia-logo.png";
 import "../css/Header.css";
 
 const links = [
-  { link: "/sports", label: "About me" },
+  { link: "/about", label: "About me" },
   { link: "/muddiestpoint", label: "Muddiest Point" },
   { link: "/entertainment", label: "Wrap ups" },
   { link: "/four", label: "Reflections" },

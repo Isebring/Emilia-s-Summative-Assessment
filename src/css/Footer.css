@@ -77,11 +77,11 @@ footer a:hover {
   gap: 0.5rem;
 }
 
-.igdb-api-section a {
+.sbcc-section a {
   display: flex;
 }
 
-.igdb-api-section span {
+.sbcc-section span {
   font-size: 0.7rem;
   display: flex;
   align-items: center;

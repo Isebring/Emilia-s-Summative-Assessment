@@ -5,6 +5,7 @@ import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import App from "./App";
 import "./main.css";
+import AboutPage from "./pages/AboutPage";
 import ErrorPage from "./pages/ErrorsPage";
 import HistoricalDetailPage from "./pages/HistoricalDetailPage";
 import LandingPage from "./pages/LandingPage";
@@ -17,6 +18,7 @@ const router = createBrowserRouter([
     children: [
       { path: "/", element: <LandingPage /> },
       { path: "/muddiestpoint", element: <MuddiestPoints /> },
+      { path: "/about", element: <AboutPage /> },
       { path: "/occasion/:id", element: <HistoricalDetailPage /> },
     ],
   },
