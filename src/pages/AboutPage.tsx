@@ -18,7 +18,12 @@ function AboutPage() {
         <Title mt="md" className="title">
           About me
         </Title>
-        <Text fw="600" size="lg" style={{ fontFamily: "Cinzel, serif" }}>
+        <Text
+          mt="sm"
+          fw="600"
+          size="lg"
+          style={{ fontFamily: "Cinzel, serif" }}
+        >
           Hi! My name is Emilia, and I am currently studying at Santa Barbara
           City College. This is my summative assessment for my history class. I
           decided to create a webpage because I felt like it allowed me to be

@@ -39,8 +39,8 @@ function Profile() {
           h={140}
           style={{
             backgroundImage: `url(${historyPattern})`,
-            // backgroundSize: "cover",
-            // backgroundPosition: "center",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
           }}
         />
         <Avatar
