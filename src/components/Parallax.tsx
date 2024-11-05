@@ -44,7 +44,7 @@ function Parallax() {
           <SimpleParallax
             orientation="down"
             overflow={true}
-            delay={3}
+            delay={1}
             transition="cubic-bezier(0,0,0,1)"
           >
             <Image
