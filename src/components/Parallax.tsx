@@ -37,7 +37,7 @@ function Parallax() {
           style={{
             position: "relative",
             width: "100%",
-            height: "100vh", // Adjust as necessary for responsiveness
+            height: "100vh",
             overflow: "hidden",
           }}
         >
@@ -52,7 +52,7 @@ function Parallax() {
               style={{
                 width: "100%",
                 height: "100vh",
-                objectFit: "cover", // Ensures image covers both height and width
+                objectFit: "cover",
               }}
             />
           </SimpleParallax>
@@ -73,7 +73,7 @@ function Parallax() {
           >
             <Title
               style={{
-                fontSize: "clamp(1.5rem, 2.5vw, 2.5rem)", // Responsive font size
+                fontSize: "clamp(1.5rem, 2.5vw, 2.5rem)",
                 lineHeight: 1.2,
               }}
               order={2}
