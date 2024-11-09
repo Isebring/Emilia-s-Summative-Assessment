@@ -1,11 +1,12 @@
-import { Container, Grid, Image } from "@mantine/core";
+import { Container, Grid, Image, Title } from "@mantine/core";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import columbus from "../assets/imgs/columbus-2.jpg";
 import historyPattern from "../assets/imgs/history-pattern.jpg";
 import spanish from "../assets/imgs/invasion-2.jpg";
 import plantation from "../assets/imgs/plantation-2.jpg";
-import teaAct from "../assets/imgs/tea-act-2.jpg";
+import shaysRebellion from "../assets/imgs/shays-rebellion.jpg";
+import teaAct from "../assets/imgs/tea_act.jpg";
 import "../css/MuddiestPoints.css";
 
 interface HistoricalEvent {
@@ -47,6 +48,12 @@ const events: HistoricalEvent[] = [
     description:
       "The Tea Act of 1773 was a British law that granted the East India Company a monopoly on the American tea trade.",
   },
+  {
+    image: shaysRebellion,
+    title: "1786 - Shays' Rebellion",
+    description:
+      "Shays' Rebellion was an armed uprising in Western Massachusetts led by Revolutionary War veteran Daniel Shays.",
+  },
 ];
 
 export function GridAsymmetrical() {
@@ -64,6 +71,16 @@ export function GridAsymmetrical() {
       }}
       my="md"
     >
+      <Title
+        style={{
+          color: "#FFF",
+          fontSize: "3rem",
+          textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
+        }}
+        order={2}
+      >
+        My view on historical events
+      </Title>
       <Grid style={{ fontFamily: "Cinzel, sans-serif" }}>
         {/* First row */}
         <Grid.Col span={{ base: 12, xs: 4 }}>
@@ -142,12 +159,18 @@ export function GridAsymmetrical() {
         </Grid.Col>
         <Grid.Col span={{ base: 12, xs: 3 }}>
           {/* Duplicate or add a new event */}
-          <ImageCard
-            event={events[0]}
-            index={5}
-            hovered={hovered}
-            setHovered={setHovered}
-          />
+          <Link
+            style={{ textDecoration: "none" }}
+            to="/occasion/6"
+            onClick={() => window.scrollTo(0, 0)}
+          >
+            <ImageCard
+              event={events[5]}
+              index={5}
+              hovered={hovered}
+              setHovered={setHovered}
+            />
+          </Link>
         </Grid.Col>
         <Grid.Col span={{ base: 12, xs: 6 }}>
           <ImageCard

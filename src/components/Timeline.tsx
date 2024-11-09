@@ -1,3 +1,5 @@
+import { Slider } from "@mantine/core";
+import { debounce } from "lodash";
 import React, { useEffect, useRef, useState } from "react";
 import parchmentTexture from "../assets/imgs/parchment2.jpg";
 import "../css/HeroVideo.css";
@@ -15,6 +17,8 @@ const HistoricalTimeline: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const backgroundImage = new Image();
   const [speed, setSpeed] = useState(0.3);
+
+  const updateSpeed = debounce((value: number) => setSpeed(value), 100);
 
   useEffect(() => {
     const canvas = canvasRef.current;
@@ -178,20 +182,18 @@ const HistoricalTimeline: React.FC = () => {
       >
         Speed:
       </label>
-      <input
-        id="speedRange"
-        type="range"
-        min="0"
-        max="5"
-        step="0.1"
+      <Slider
+        min={0}
+        max={5}
+        step={0.1}
         value={speed}
-        onChange={(e) => setSpeed(parseFloat(e.target.value))}
+        onChange={(value) => updateSpeed(value)} // Debounced onChange for Firefox optimization
         style={{
           position: "absolute",
           top: "38px",
           right: "20px",
           zIndex: 5,
-          color: "#e6be8a",
+          width: "150px",
         }}
       />
     </div>

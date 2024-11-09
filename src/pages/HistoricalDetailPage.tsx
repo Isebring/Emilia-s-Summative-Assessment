@@ -1,10 +1,11 @@
 import { Container, Paper, Text } from "@mantine/core";
 import React from "react";
 import { useParams } from "react-router-dom";
-import columbusImg from "../assets/imgs/columbus-2.jpg";
-import invasionImg from "../assets/imgs/invasion-2.jpg";
+import columbusImg from "../assets/imgs/columbus.jpg";
 import jamestownImg from "../assets/imgs/jamestown-2.jpg";
 import plantationImg from "../assets/imgs/plantation-2.jpg";
+import shaysRebellionImg from "../assets/imgs/shays-rebellion1.jfif";
+import invasionImg from "../assets/imgs/spanish-invasion.jpg";
 import teaActImg from "../assets/imgs/tea-act-2.jpg";
 import { EmojiRating } from "../components/Rating";
 import Trivia from "../components/Trivia";
@@ -17,6 +18,7 @@ const images: { [key: string]: string } = {
   "jamestown-2.jpg": jamestownImg,
   "plantation-2.jpg": plantationImg,
   "tea-act-2.jpg": teaActImg,
+  "shays-rebellion1.jfif": shaysRebellionImg,
 };
 
 // Detail page component
@@ -36,7 +38,9 @@ const HistoricalDetailPage: React.FC = () => {
     <div className="detail-page">
       <div
         className="detail-header"
-        style={{ backgroundImage: `url(${backgroundImageUrl})` }}
+        style={{
+          backgroundImage: `url(${backgroundImageUrl})`,
+        }}
       >
         <h1>{occasion.title}</h1>
         <p>

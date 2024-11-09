@@ -11,7 +11,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { GiEarthAfricaEurope } from "react-icons/gi";
 import { IoSchoolSharp } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import historyPattern from "../assets/imgs/history-pattern.jpg";
+import historyPattern from "../assets/imgs/history-pattern3.jfif";
 
 const stats = [
   { icon: <IoSchoolSharp />, label: "SBCC" },

@@ -253,6 +253,58 @@
           "event": "The Boston Tea Party occurs on December 16th as a response to the Tea Act."
         }
       ]
+    },
+    {
+      "id": 6,
+      "title": "Shays' Rebellion",
+      "date": "1786-08-29",
+      "location": "Massachusetts, USA",
+      "description": "Shays' Rebellion was an armed uprising in Western Massachusetts led by Revolutionary War veteran Daniel Shays. It was driven by economic injustices faced by farmers and is considered one of the key events leading to the drafting of the U.S. Constitution.",
+      "image": "shays-rebellion1.jfif",
+      "rating": 3,
+      "trivia": [
+        {
+          "question": "Who led Shays' Rebellion?",
+          "options": ["Daniel Shays", "George Washington", "Thomas Jefferson", "Alexander Hamilton"],
+          "correct_answer": "Daniel Shays"
+        },
+        {
+          "question": "What was the main cause of Shays' Rebellion?",
+          "options": ["Economic injustices faced by farmers", "Religious persecution", "Disputes over land ownership", "Taxation without representation"],
+          "correct_answer": "Economic injustices faced by farmers"
+        },
+        {
+          "question": "What was one of the major outcomes of Shays' Rebellion?",
+          "options": ["It led to the drafting of the U.S. Constitution", "It resulted in the end of slavery", "It caused the Revolutionary War", "It established the Bill of Rights"],
+          "correct_answer": "It led to the drafting of the U.S. Constitution"
+        },
+        {
+          "question": "In which state did Shays' Rebellion occur?",
+          "options": ["Massachusetts", "Virginia", "New York", "Pennsylvania"],
+          "correct_answer": "Massachusetts"
+        }
+      ],
+      "reflection": "Shays' Rebellion helped me better understand how economic issues can lead to civil unrest, and how the early American government struggled to deal with these challenges.",
+      "challenges_faced": "It was challenging to grasp how such a significant event could happen so soon after the American Revolution, and how it exposed the weaknesses of the Articles of Confederation.",
+      "skills_gained": [
+        "Analyzing the impact of economic factors on political stability",
+        "Understanding early U.S. history and government structure",
+        "Critical thinking about civil unrest and its causes"
+      ],
+      "key_events": [
+        {
+          "year": 1786,
+          "event": "Shays' Rebellion begins on August 29th with an attack on the Springfield armory."
+        },
+        {
+          "year": 1787,
+          "event": "The rebellion is defeated in early 1787, but it highlights the need for a stronger federal government."
+        },
+        {
+          "year": 1787,
+          "event": "The U.S. Constitution is drafted, partly in response to the weaknesses exposed by Shays' Rebellion."
+        }
+      ]
     }
   ]
 }
