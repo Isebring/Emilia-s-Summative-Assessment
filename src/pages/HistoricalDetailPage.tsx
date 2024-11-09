@@ -1,7 +1,8 @@
 import { Container, Paper, Text } from "@mantine/core";
 import React from "react";
 import { useParams } from "react-router-dom";
-import columbusImg from "../assets/imgs/columbus.jpg";
+import billRightsImg from "../assets/imgs/bill-of-rights1.jfif";
+import columbusImg from "../assets/imgs/columbus-2.jpg";
 import jamestownImg from "../assets/imgs/jamestown-2.jpg";
 import plantationImg from "../assets/imgs/plantation-2.jpg";
 import shaysRebellionImg from "../assets/imgs/shays-rebellion1.jfif";
@@ -19,6 +20,7 @@ const images: { [key: string]: string } = {
   "plantation-2.jpg": plantationImg,
   "tea-act-2.jpg": teaActImg,
   "shays-rebellion1.jfif": shaysRebellionImg,
+  "bill-of-rights1.jfif": billRightsImg,
 };
 
 // Detail page component

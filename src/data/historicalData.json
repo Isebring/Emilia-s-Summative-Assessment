@@ -305,6 +305,58 @@
           "event": "The U.S. Constitution is drafted, partly in response to the weaknesses exposed by Shays' Rebellion."
         }
       ]
+    },
+    {
+      "id": 7,
+      "title": "Bill of Rights",
+      "date": "1791-12-15",
+      "location": "United States",
+      "description": "The Bill of Rights consists of the first ten amendments to the U.S. Constitution. Ratified in 1791, they protect individual liberties and limit the power of the government.",
+      "image": "bill-of-rights1.jfif",
+      "rating": 3,
+      "trivia": [
+        {
+          "question": "How many amendments are in the Bill of Rights?",
+          "options": ["10", "12", "27", "15"],
+          "correct_answer": "10"
+        },
+        {
+          "question": "Which amendment protects freedom of speech?",
+          "options": ["1st Amendment", "2nd Amendment", "4th Amendment", "5th Amendment"],
+          "correct_answer": "1st Amendment"
+        },
+        {
+          "question": "Which amendment protects citizens from unreasonable searches and seizures?",
+          "options": ["4th Amendment", "1st Amendment", "5th Amendment", "6th Amendment"],
+          "correct_answer": "4th Amendment"
+        },
+        {
+          "question": "Which amendment guarantees the right to bear arms?",
+          "options": ["2nd Amendment", "3rd Amendment", "5th Amendment", "1st Amendment"],
+          "correct_answer": "2nd Amendment"
+        }
+      ],
+      "reflection": "The Bill of Rights serves as a cornerstone of American democracy, ensuring that individual freedoms are safeguarded against government overreach. Studying it helped me appreciate the foundational principles of liberty and justice.",
+      "challenges_faced": "Understanding the historical context of each amendment and how the Bill of Rights was a response to Anti-Federalist concerns required deep research.",
+      "skills_gained": [
+        "Constitutional law understanding",
+        "Historical analysis of early U.S. government",
+        "Critical thinking about civil liberties"
+      ],
+      "key_events": [
+        {
+          "year": 1789,
+          "event": "The Bill of Rights is introduced in Congress by James Madison."
+        },
+        {
+          "year": 1791,
+          "event": "The Bill of Rights is ratified by the necessary number of states on December 15th."
+        },
+        {
+          "year": 1791,
+          "event": "The first ten amendments become part of the U.S. Constitution."
+        }
+      ]
     }
   ]
 }

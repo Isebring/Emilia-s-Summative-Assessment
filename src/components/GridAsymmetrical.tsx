@@ -1,7 +1,8 @@
 import { Container, Grid, Image, Title } from "@mantine/core";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import columbus from "../assets/imgs/columbus-2.jpg";
+import billofRights from "../assets/imgs/bill-of-rights.jfif";
+import columbus from "../assets/imgs/columbus.jpg";
 import historyPattern from "../assets/imgs/history-pattern.jpg";
 import spanish from "../assets/imgs/invasion-2.jpg";
 import plantation from "../assets/imgs/plantation-2.jpg";
@@ -54,6 +55,12 @@ const events: HistoricalEvent[] = [
     description:
       "Shays' Rebellion was an armed uprising in Western Massachusetts led by Revolutionary War veteran Daniel Shays.",
   },
+  {
+    image: billofRights,
+    title: "1789 - Bill of Rights",
+    description:
+      "The Bill of Rights consists of the first ten amendments to the U.S. Constitution.",
+  },
 ];
 
 export function GridAsymmetrical() {
@@ -74,7 +81,7 @@ export function GridAsymmetrical() {
       <Title
         style={{
           color: "#FFF",
-          fontSize: "3rem",
+          fontSize: "2.5rem",
           textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
         }}
         order={2}
@@ -173,12 +180,18 @@ export function GridAsymmetrical() {
           </Link>
         </Grid.Col>
         <Grid.Col span={{ base: 12, xs: 6 }}>
-          <ImageCard
-            event={events[1]}
-            index={6}
-            hovered={hovered}
-            setHovered={setHovered}
-          />
+          <Link
+            style={{ textDecoration: "none" }}
+            to="/occasion/7"
+            onClick={() => window.scrollTo(0, 0)}
+          >
+            <ImageCard
+              event={events[6]}
+              index={6}
+              hovered={hovered}
+              setHovered={setHovered}
+            />
+          </Link>
         </Grid.Col>
       </Grid>
     </Container>

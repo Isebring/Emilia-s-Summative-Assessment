@@ -16,8 +16,8 @@ import "../css/Header.css";
 const links = [
   { link: "/about", label: "About me" },
   { link: "/muddiestpoint", label: "Muddiest Point" },
-  { link: "/entertainment", label: "Wrap ups" },
-  { link: "/four", label: "Reflections" },
+  // { link: "/entertainment", label: "Wrap ups" },
+  // { link: "/four", label: "Reflections" },
 ];
 
 function Header() {

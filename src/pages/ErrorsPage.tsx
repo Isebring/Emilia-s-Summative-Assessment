@@ -23,7 +23,7 @@ function ErrorPage() {
           </Text>
           <Group justify="center">
             <Link to="/">
-              <Button color="#7F6C46" size="md">
+              <Button variant="outline" color="dark" size="xl" radius="xl">
                 Take me back to home page
               </Button>
             </Link>

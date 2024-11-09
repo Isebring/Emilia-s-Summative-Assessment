@@ -74,7 +74,7 @@ function Parallax() {
             <Title
               style={{
                 fontSize: "clamp(1.5rem, 2.5vw, 2.5rem)",
-                lineHeight: 1.2,
+                lineHeight: 2,
               }}
               order={2}
             >
