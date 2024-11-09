@@ -8,7 +8,6 @@ import plantationImg from "../assets/imgs/plantation-2.jpg";
 import shaysRebellionImg from "../assets/imgs/shays-rebellion1.jfif";
 import invasionImg from "../assets/imgs/spanish-invasion.jpg";
 import teaActImg from "../assets/imgs/tea-act-2.jpg";
-import { EmojiRating } from "../components/Rating";
 import Trivia from "../components/Trivia";
 import "../css/HistoricalDetailPage.css";
 import historicalData from "../data/historicalData.json";
@@ -61,10 +60,10 @@ const HistoricalDetailPage: React.FC = () => {
       </div>
 
       <section className="detail-content">
-        <div className="rating-section">
+        {/* <div className="rating-section">
           <p style={{ fontWeight: "500" }}>My mood about this occasion:</p>
           <EmojiRating value={occasion.rating} />
-        </div>
+        </div> */}
         <Paper className="parchment-texture">
           <h2>Reflection</h2>
           <p>{occasion.reflection}</p>

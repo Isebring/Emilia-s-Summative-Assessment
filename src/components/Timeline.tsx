@@ -41,6 +41,7 @@ const HistoricalTimeline: React.FC = () => {
       { id: 4, year: "1608", description: "The Triangular Trade begins" },
       { id: 5, year: "1773", description: "Tea Act and Boston Tea Party" },
       { id: 6, year: "1786", description: "Shays' Rebellion" },
+      { id: 7, year: "1789", description: "Bill of Rights" },
     ];
 
     backgroundImage.src = parchmentTexture;
