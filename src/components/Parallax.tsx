@@ -48,8 +48,13 @@ function Parallax() {
             transition="cubic-bezier(0,0,0,1)"
           >
             <Image
-              src={section.image}
+              // src={section.image}
               style={{
+                backgroundImage: `linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0 )), url(${section.image})`,
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover",
+                backgroundAttachment: "fixed",
+                backgroundPosition: "center center",
                 width: "100%",
                 height: "100vh",
                 objectFit: "cover",
