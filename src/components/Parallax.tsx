@@ -4,6 +4,7 @@ import parallaxImg1 from "../assets/imgs/history-pattern.jpg";
 import parallaxImg from "../assets/imgs/history-pattern1.jfif";
 import parallaxImg2 from "../assets/imgs/history-pattern2.jfif";
 import parallaxImg4 from "../assets/imgs/history-pattern4.jfif";
+import "../css/Parallax.css";
 
 const contentSections = [
   {
@@ -29,11 +30,27 @@ const contentSections = [
 ];
 
 function Parallax() {
+  const handleArrowClick = () => {
+    const images = document.querySelectorAll(".parallax-image");
+    const visibleImage = Array.from(images).find(
+      (img) => img.getBoundingClientRect().top >= 0
+    );
+
+    if (visibleImage) {
+      const nextImage = visibleImage.nextElementSibling;
+      if (nextImage) {
+        nextImage.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
+
   return (
     <>
+      <div className="scrollable-content"></div>
       {contentSections.map((section, index) => (
         <Box
           key={index}
+          className="parallax-image"
           style={{
             position: "relative",
             width: "100%",
@@ -48,9 +65,8 @@ function Parallax() {
             transition="cubic-bezier(0,0,0,1)"
           >
             <Image
-              // src={section.image}
               style={{
-                backgroundImage: `linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0 )), url(${section.image})`,
+                backgroundImage: `linear-gradient(to bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0)), url(${section.image})`,
                 backgroundRepeat: "no-repeat",
                 backgroundSize: "cover",
                 backgroundAttachment: "fixed",
@@ -96,6 +112,11 @@ function Parallax() {
           </Box>
         </Box>
       ))}
+      <div className="bouncing-arrow" onClick={handleArrowClick}>
+        <div className="arrow-bg">
+          <span>&#8595;</span>
+        </div>
+      </div>
     </>
   );
 }

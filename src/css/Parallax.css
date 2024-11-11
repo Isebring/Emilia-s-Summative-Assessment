@@ -1,0 +1,42 @@
+.bouncing-arrow {
+  position: absolute;
+  bottom: 6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.arrow-bg {
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.747);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.arrow-bg span {
+  font-size: 32px;
+  color: #fff;
+}
+
+.arrow-bg:hover {
+  background-color: rgba(41, 40, 40, 0.637);
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(15px);
+  }
+}
+
+.bouncing-arrow .arrow-bg {
+  animation: bounce 2s infinite;
+}

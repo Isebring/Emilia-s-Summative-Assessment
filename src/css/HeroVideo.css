@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap");
 
 /* Full-screen hero section */
-.hero-section {
+/* .hero-section {
   position: relative;
   height: 100vh;
   width: 100%;
@@ -15,8 +15,8 @@
   display: none;
 }
 
-/* Wrapper for the YouTube video */
-.video-wrapper {
+Wrapper for the YouTube video */
+/* .video-wrapper {
   position: absolute;
   top: 0;
   left: 0;
@@ -24,75 +24,75 @@
   width: 100%;
   z-index: -1;
   overflow: hidden;
-}
+} */
 
-/* Ensure video covers the entire screen */
-iframe {
+/* Ensure video covers the entire screen
+/* iframe {
   object-fit: cover;
   width: 100%;
   height: 100%;
-}
+} */
 
 /* Black overlay to darken the video */
-.video-overlay {
+/* .video-overlay {
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
   background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity here */
-  z-index: 1;
-}
+/* z-index: 1; */
+/* } */
 
 /* Historical text in the top-left corner */
-.hero-text {
+/* .hero-text {
   position: absolute;
   top: 20px;
   left: 20px;
   z-index: 2;
   color: #fff;
   font-family: "Cinzel", serif; /* Historical font */
-  font-size: 2.5rem;
-  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); /* Add text shadow for readability */
-}
+/* font-size: 2.5rem;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8); Add text shadow for readability */
+/* }  */
 
-.hero-text h1 {
+/* .hero-text h1 {
   margin: 0;
-}
+} */
 
 /* Bouncing arrow at the bottom of the hero section */
-.bouncing-arrow {
+/* .bouncing-arrow {
   position: absolute;
   bottom: 6rem;
-  z-index: 2;
+  z-index: 10;
   cursor: pointer; /* Make the arrow clickable */
-}
+/* } */
 
 /* Circular background for the arrow */
-.arrow-bg {
+/* .arrow-bg {
   width: 60px;
   height: 60px;
   background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent circle */
-  border-radius: 50%;
+/* border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background-color 0.3s ease;
-}
+  transition: background-color 0.3s ease; */
+/* } */
 
 /* Arrow style */
-.arrow-bg span {
+/* .arrow-bg span {
   font-size: 32px;
   color: #fff;
-}
+} */
 
 /* Arrow hover effect */
-.arrow-bg:hover {
+/* .arrow-bg:hover {
   background-color: rgba(255, 255, 255, 0.4);
-}
+} */
 
 /* Keyframes for the bouncing animation */
-@keyframes bounce {
+/* @keyframes bounce {
   0%,
   100% {
     transform: translateY(0);
@@ -104,9 +104,9 @@ iframe {
 
 .bouncing-arrow .arrow-bg {
   animation: bounce 2s infinite;
-}
+} */
 
-@media only screen and (max-width: 1200px) {
+/* @media only screen and (max-width: 1200px) {
   .hero-text {
     font-size: 2rem;
     top: 15px;
@@ -130,4 +130,4 @@ iframe {
   .hero-section {
     height: 17rem;
   }
-}
+/*  */
