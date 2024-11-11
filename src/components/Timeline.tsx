@@ -1,9 +1,9 @@
-import { Slider } from "@mantine/core";
-import { debounce } from "lodash";
-import React, { useEffect, useRef, useState } from "react";
-import parchmentTexture from "../assets/imgs/parchment2.jpg";
-import "../css/HeroVideo.css";
-import Quote from "./BlockQuote";
+import { Slider } from '@mantine/core';
+import { debounce } from 'lodash';
+import React, { useEffect, useRef, useState } from 'react';
+import parchmentTexture from '../assets/imgs/parchment2.jpg';
+import '../css/HeroVideo.css';
+import Quote from './BlockQuote';
 
 interface Particle {
   x: number;
@@ -16,7 +16,7 @@ interface Particle {
 const HistoricalTimeline: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const backgroundImage = new Image();
-  const [speed, setSpeed] = useState(0.3);
+  const [speed, setSpeed] = useState(1.2);
 
   const updateSpeed = debounce((value: number) => setSpeed(value), 100);
 
@@ -24,7 +24,7 @@ const HistoricalTimeline: React.FC = () => {
     const canvas = canvasRef.current;
     if (!canvas) return;
 
-    const ctx = canvas.getContext("2d");
+    const ctx = canvas.getContext('2d');
     if (!ctx) return;
 
     canvas.width = window.innerWidth * (window.innerWidth < 768 ? 0.8 : 1);
@@ -35,13 +35,13 @@ const HistoricalTimeline: React.FC = () => {
     const particles: Particle[] = [];
 
     const historicalEvents = [
-      { id: 1, year: "1492", description: "Columbus Discovers Americas" },
-      { id: 2, year: "1519", description: "Spanish Invasion of the Americas" },
-      { id: 3, year: "1607", description: "Founding of Jamestown" },
-      { id: 4, year: "1608", description: "The Triangular Trade begins" },
-      { id: 5, year: "1773", description: "Tea Act and Boston Tea Party" },
-      { id: 6, year: "1786", description: "Shays' Rebellion" },
-      { id: 7, year: "1789", description: "Bill of Rights" },
+      { id: 1, year: '1492', description: 'Columbus Discovers Americas' },
+      { id: 2, year: '1519', description: 'Spanish Invasion of the Americas' },
+      { id: 3, year: '1607', description: 'Founding of Jamestown' },
+      { id: 4, year: '1608', description: 'The Triangular Trade begins' },
+      { id: 5, year: '1773', description: 'Tea Act and Boston Tea Party' },
+      { id: 6, year: '1786', description: "Shays' Rebellion" },
+      { id: 7, year: '1789', description: 'Bill of Rights' },
     ];
 
     backgroundImage.src = parchmentTexture;
@@ -94,7 +94,7 @@ const HistoricalTimeline: React.FC = () => {
       ctx!.globalAlpha = 1;
       drawParticles();
 
-      ctx!.strokeStyle = "#E6BE8A";
+      ctx!.strokeStyle = '#E6BE8A';
       ctx!.lineWidth = 7;
       ctx!.beginPath();
       ctx!.moveTo(0, canvas!.height / 2);
@@ -105,26 +105,26 @@ const HistoricalTimeline: React.FC = () => {
         const eventX = canvas!.width - scrollPosition + index * 400;
         const eventY = canvas!.height / 2;
 
-        ctx!.fillStyle = "#7F6C46";
+        ctx!.fillStyle = '#7F6C46';
         ctx!.beginPath();
         ctx!.arc(eventX, eventY, 10, 0, Math.PI * 2);
         ctx!.fill();
 
-        ctx!.strokeStyle = "#E6BE8A";
+        ctx!.strokeStyle = '#E6BE8A';
         ctx!.lineWidth = 5;
         ctx!.stroke();
 
-        ctx!.shadowColor = "rgba(0, 0, 0, 0.5)";
+        ctx!.shadowColor = 'rgba(0, 0, 0, 0.5)';
         ctx!.shadowBlur = 10;
         ctx!.shadowOffsetX = 3;
         ctx!.shadowOffsetY = 3;
 
-        ctx!.fillStyle = "#fff";
-        ctx!.font = "18px Cinzel";
+        ctx!.fillStyle = '#fff';
+        ctx!.font = '18px Cinzel';
         ctx!.fillText(event.year, eventX - 20, eventY - 20);
 
-        ctx!.fillStyle = "#fff";
-        ctx!.font = "14px Cinzel";
+        ctx!.fillStyle = '#fff';
+        ctx!.font = '14px Cinzel';
         ctx!.fillText(event.description, eventX - 50, eventY + 30);
       });
 
@@ -146,40 +146,40 @@ const HistoricalTimeline: React.FC = () => {
       canvas.height = window.innerHeight;
       initParticles();
     };
-    window.addEventListener("resize", handleResize);
+    window.addEventListener('resize', handleResize);
 
-    return () => window.removeEventListener("resize", handleResize);
+    return () => window.removeEventListener('resize', handleResize);
   }, [speed]);
 
   return (
-    <div style={{ position: "relative", width: "100%", height: "100vh" }}>
+    <div style={{ position: 'relative', width: '100%', height: '100vh' }}>
       <Quote
         style={{
-          position: "absolute",
-          top: "2rem",
-          left: "5rem",
-          fontWeight: "600",
+          position: 'absolute',
+          top: '2rem',
+          left: '5rem',
+          fontWeight: '600',
           zIndex: 5,
-          background: "#ffffff81",
+          background: '#ffffff81',
         }}
       />
       <canvas
         ref={canvasRef}
         style={{
-          width: "100%",
-          height: "100vh",
-          backgroundColor: "#222",
+          width: '100%',
+          height: '100vh',
+          backgroundColor: '#222',
         }}
       />
       <label
         htmlFor="speedRange"
         style={{
-          fontFamily: "cinzel, sans-serif",
-          position: "absolute",
-          top: "10px",
-          right: "101px",
+          fontFamily: 'cinzel, sans-serif',
+          position: 'absolute',
+          top: '10px',
+          right: '101px',
           zIndex: 5,
-          color: "#fff",
+          color: '#fff',
         }}
       >
         Speed:
@@ -191,11 +191,11 @@ const HistoricalTimeline: React.FC = () => {
         value={speed}
         onChange={(value) => updateSpeed(value)} // Debounced onChange for Firefox optimization
         style={{
-          position: "absolute",
-          top: "38px",
-          right: "20px",
+          position: 'absolute',
+          top: '38px',
+          right: '20px',
           zIndex: 5,
-          width: "150px",
+          width: '150px',
         }}
       />
     </div>

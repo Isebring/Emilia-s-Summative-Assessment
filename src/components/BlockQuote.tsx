@@ -1,6 +1,6 @@
-import { Blockquote } from "@mantine/core";
-import { RxQuote } from "react-icons/rx";
-import "../css/MuddiestPoints.css";
+import { Blockquote } from '@mantine/core';
+import { RxQuote } from 'react-icons/rx';
+import '../css/MuddiestPoints.css';
 
 // Add style as a prop to the component
 interface QuoteProps {
@@ -14,13 +14,14 @@ function Quote({ style }: QuoteProps) {
       className="title"
       iconSize={37}
       color="#e6be8a"
-      cite="– Emilia Johansson"
+      cite="– Elizabeth Cady Stanton"
       icon={icon}
       mt="xl"
       // Apply the passed style here
       style={style}
     >
-      I have realized how much I actually enjoy history.
+      We hold these truths to be self-evident: that all men and women are
+      created equal.
     </Blockquote>
   );
 }
