@@ -1,6 +1,6 @@
 .bouncing-arrow {
   position: absolute;
-  bottom: 6rem;
+  bottom: 2%;
   left: 50%;
   transform: translateX(-50%);
   z-index: 10;
@@ -39,4 +39,15 @@
 
 .bouncing-arrow .arrow-bg {
   animation: bounce 2s infinite;
+}
+
+@media only screen and (max-width: 600px) {
+  .arrow-bg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .arrow-bg span {
+    font-size: 28px;
+  }
 }
