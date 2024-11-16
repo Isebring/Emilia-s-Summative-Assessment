@@ -85,7 +85,7 @@ function Parallax() {
                 backgroundPosition: "center center",
                 width: "100%",
                 height: "100vh",
-                // objectFit: "",
+                // objectFit: "contain",
               }}
             />
           </SimpleParallax>
@@ -102,12 +102,14 @@ function Parallax() {
               textAlign: "center",
               width: "90%",
               maxWidth: "1000px",
+              maxHeight: "80vh",
+              overflowY: "auto",
             }}
           >
             <Title
               style={{
                 fontSize: "clamp(1.5rem, 2.5vw, 2.5rem)",
-                lineHeight: 2,
+                lineHeight: 1.4,
               }}
               order={2}
             >
@@ -127,6 +129,7 @@ function Parallax() {
               style={{
                 fontFamily: "Cinzel, serif",
                 fontSize: "clamp(1rem, 1.5vw, 1.25rem)",
+                overflowWrap: "break-word",
               }}
             >
               {section.text}
