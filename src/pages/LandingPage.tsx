@@ -2,8 +2,10 @@ import { Container } from "@mantine/core";
 import { GridAsymmetrical } from "../components/GridAsymmetrical";
 import Parallax from "../components/Parallax";
 import HistoricalTimeline from "../components/Timeline";
+import { useScroll } from "../ScrollContext";
 
 function LandingPage() {
+  const { reflectionsRef } = useScroll();
   return (
     <>
       <Parallax />
@@ -11,7 +13,9 @@ function LandingPage() {
       {/* <HeroSlide /> */}
       <HistoricalTimeline />
       <Container>
-        <GridAsymmetrical />
+        <div ref={reflectionsRef}>
+          <GridAsymmetrical />
+        </div>
       </Container>
     </>
   );

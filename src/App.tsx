@@ -1,18 +1,21 @@
+import { Box } from "@mantine/core";
 import { Outlet } from "react-router-dom";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
-import { Box } from "@mantine/core";
+import { ScrollProvider } from "./ScrollContext";
 
 function App() {
   return (
     <>
-      <Header />
-      <Box>
-        <main>
-          <Outlet />
-        </main>
-      </Box>
-      <Footer />
+      <ScrollProvider>
+        <Header />
+        <Box>
+          <main>
+            <Outlet />
+          </main>
+        </Box>
+        <Footer />
+      </ScrollProvider>
     </>
   );
 }
