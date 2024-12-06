@@ -100,7 +100,6 @@ function Header() {
           link.onClick?.();
         }}
         style={{
-          border: "none",
           cursor: "pointer",
         }}
       >
