@@ -1,6 +1,6 @@
-import { Blockquote } from '@mantine/core';
-import { RxQuote } from 'react-icons/rx';
-import '../css/MuddiestPoints.css';
+import { Blockquote } from "@mantine/core";
+import { RxQuote } from "react-icons/rx";
+import "../css/MuddiestPoints.css";
 
 // Add style as a prop to the component
 interface QuoteProps {

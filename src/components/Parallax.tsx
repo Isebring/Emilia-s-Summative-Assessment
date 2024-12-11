@@ -29,14 +29,16 @@ const contentSections = [
   },
   {
     title: "Evidence from Assigned Reading #3",
-    quote: "",
-    text: " Specific references from the assigned reading.",
+    quote:
+      "“For all the positive atmosphere and grand spirit Manifest Destiny created, it also created the dark side of American History, none darker than the plight of the American Indian. While the positive side of Manifest Destiny was a surge of enthusiasm and energy for pushing West, the negative side was the belief that the white man had the right to destroy anything and anyone — namely Indians — who got in the way. Tracing the path of Manifest Destiny across the West would highlight mass destruction of tribal organizations, confinement of Indians to reservations, and full-blown genocide.” - Michael T. Lubragge",
+    text: "Lubragge’s description of the “dark side” of Manifest Destiny, including the destruction of tribal organizations and full-blown genocide, exposes the violent realities of westward expansion. While Manifest Destiny is often celebrated as a symbol of American progress, this passage reveals how it justified the systemic marginalization and dehumanization of Native Americans. This evidence challenges the glorified narrative of expansion, supporting my understanding of how historical injustices against marginalized groups continue to shape contemporary issues like tribal sovereignty and systemic inequality.",
     image: parallaxImg,
   },
   {
     title: "Evidence from Assigned Reading #4",
-    quote: "",
-    text: "Specific references from the assigned reading.",
+    quote:
+      "“Increased cotton production, not optimum efficiency or profit, became an obsession. A Northern traveler in 1834 noticed this singular goal: “To sell cotton in order to buy negroes – to make more cotton to buy more negroes, ‘ad infinitum.’” Today, we call this leverage. Although risky, cotton’s revenue stream and collateral made credit available, which in turn facilitated more production. During the antebellum period, financing utilized tragic human collateral to expand a horrific institution.” - Gene Dattel",
+    text: "Dattel’s observation of the cotton economy’s obsession “to sell cotton in order to buy negroes – to make more cotton to buy more negroes, ad infinitum,” reveals the relentless commodification of African Americans. This cyclical exploitation fueled westward expansion and economic growth but did so by perpetuating an institution of human suffering. Far from a narrative of freedom or progress, this passage highlights how the glorified story of expansion is rooted in the systemic marginalization of African Americans, whose experiences were erased from the national narrative. This understanding deepens my recognition of how these historical injustices continue to shape contemporary debates about racial equity and economic disparities.",
     image: parallaxImg3,
   },
 ];
