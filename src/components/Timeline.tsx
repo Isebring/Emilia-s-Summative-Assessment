@@ -1,4 +1,4 @@
-import { Slider, Text } from "@mantine/core";
+import { Slider } from "@mantine/core";
 import { debounce } from "lodash";
 import React, { useEffect, useRef, useState } from "react";
 import parchmentTexture from "../assets/imgs/parchment2.jpg";
@@ -163,21 +163,6 @@ const HistoricalTimeline: React.FC = () => {
           background: "#ffffff81",
         }}
       />
-      <Text
-        style={{
-          fontSize: "2.5rem",
-          fontFamily: "Cinzel, serif",
-          color: "white",
-          position: "absolute",
-          top: "22rem",
-          left: "5rem",
-          fontWeight: "600",
-          zIndex: 5,
-          textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)",
-        }}
-      >
-        Timeline of some historical events
-      </Text>
       <canvas
         ref={canvasRef}
         style={{
